@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galaxy Defender</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="startScreen">
+      <h1>🚀 GALAXY DEFENDER 🚀</h1>
+      <button id="startBtn">게임 시작</button>
+      <button id="infoBtn">게임 설명</button>
+    </div>
+
+    <div id="infoOverlay" class="hidden">
+      <div id="infoBox">
+        <h2>🎮 게임 설명</h2>
+        <p>
+          방향키 ← → : 이동<br />
+          스페이스바 : 공격<br />
+          <b>P 키</b> : 게임 일시정지 / 재개<br />
+          <b>R 키</b> : 게임 재시작<br /><br />
+          <b>아이템 종류</b>
+        </p>
+        <div class="item-guide">
+          <div class="item-row">
+            <img src="images/power.png" class="item-icon" alt="공격 아이템">
+            <span>공격 아이템 ⚡ : 공격력이 1단계 상승 (최대 4단계)</span>
+          </div>
+          <div class="item-row">
+            <img src="images/score.png" class="item-icon" alt="점수 아이템">
+            <span>점수 아이템 ⭐ : 점수 +10</span>
+          </div>
+        </div>
+        <button id="closeInfo">닫기</button>
+      </div>
+    </div>
+
+    <canvas id="gameCanvas" width="400" height="600"></canvas>
+    <script src="js/space_shooter.js"></script>
+  </body>
+</html>
